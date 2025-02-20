@@ -34,27 +34,73 @@ li a:hover{
 }
 
 header{
-    background-color: #444;
+    background-color: #222;
     padding: 20px;
     text-align: center;
 }
 
-header div{
-    max-width: 600px;
-    margin: 0 auto;
-}
 
 header p{
     font-size: 1.2em;
     color: #f0f0f0;
+    margin: 0;
 }
 
-li{
-    margin:0 10px;
+nav{
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    margin: 0 15px;
+    color: #f0f0f0;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+nav li ul:hover{
+    color: #ff4444;
 }
 
 .story-showcase{
-    margin: 0;
-    padding: 0;
-    
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease box-shadow 0.3s ease;
+
+}
+
+.story-showcase:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+
+}
+
+.story-showcase h1{
+    color: #ff4444;
+    margin-top: 0;
+
+}
+
+.story-showcase p{
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.story-showcase a{
+    color: #ff4444;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.story-showcase a:hover{
+    text-decoration: underline;
 }
